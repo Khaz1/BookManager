@@ -1,4 +1,6 @@
-package src;
+package controll;
+
+import model.Book;
 
 import java.util.ArrayList;
 import java.util.Scanner;

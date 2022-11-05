@@ -1,6 +1,6 @@
-package src.ui;
-import src.BooksManager;
+package view;
 
+import controll.BooksManager;
 import java.util.Scanner;
 
 public class Menu {
