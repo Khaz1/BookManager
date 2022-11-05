@@ -1,3 +1,6 @@
+package src.ui;
+import src.BooksManager;
+
 import java.util.Scanner;
 
 public class Menu {
@@ -7,7 +10,7 @@ public class Menu {
         this.booksManager = booksmanager;
     }
 
-    void selectAction(Scanner scanner) {
+    public void selectAction(Scanner scanner) {
         while (true){
             System.out.println("Выберите вариант ответа в виде числа: 1. Добавить новую книгу  " +
                     "2. Посмотреть инфо по существующей. 3. Посмотреть список книг. 0. Для выхода из программы ");
@@ -30,3 +33,4 @@ public class Menu {
     }
 }
 
+//default

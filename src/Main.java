@@ -1,3 +1,7 @@
+package src;
+
+import src.ui.Menu;
+
 import java.util.Scanner;
 
 public class Main {

@@ -1,3 +1,5 @@
+package src;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -15,13 +17,15 @@ public class BooksManager {
         }
     }
 
-    ArrayList<Book> getBooks() {
+    public ArrayList<Book> getBooks() {
         return books;
     }
 
-    int getAmountBooks() {return books.size(); }
+    public int getAmountBooks() {
+        return books.size();
+    }
 
-    void addBook(Scanner scanner) {
+    public void addBook(Scanner scanner) {
         String inputName = scanner.nextLine();
         System.out.println("Введите имя автора");
         String author = scanner.nextLine();
@@ -31,7 +35,7 @@ public class BooksManager {
         System.out.println("Книга № " + (books.size() - 1) + " добавилась");
     }
 
-    void findAndRemoveBook(Scanner scanner) {
+    public void findAndRemoveBook(Scanner scanner) {
         int numbersBook = Integer.parseInt(scanner.nextLine());
         int bookCount = books.size() - 1;
         if (numbersBook >= books.size()) {
